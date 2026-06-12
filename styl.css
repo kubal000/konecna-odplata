@@ -1,0 +1,251 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    margin-bottom: 2em;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    text-align: center;
+    color: rgb(11, 115, 51);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    background-color: black;
+    box-shadow: black 0px 6px 20px;;
+}
+
+.sidemenu {
+    flex-direction: column;
+    top: 10em;
+    font-size: 1.1em;
+    width: 14em;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nabydka{
+    gap: 0.625em;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(11, 115, 51, 0.7);
+    margin: 0.3125em;
+    padding: 0.3125em;
+
+    border: solid;
+    border-color: rgba(11, 115, 51, 0.7);
+    border-radius: 0.3125em;
+
+    min-width: 10em;
+    height: 1.25em;
+}
+
+.chosen {
+    font-size: 2.5em;
+    width: auto;
+    height: auto;
+}
+
+img, iframe {
+    display: block;
+    margin: 0 auto;
+
+    background-color: rgba(11, 115, 51, 0.7);
+    padding: 0.3125em;
+
+    border: solid;
+    border-color: rgba(11, 115, 51, 0.7);
+    border-radius: 1.875em;
+    box-sizing: border-box;
+}
+img {
+    margin: 1em auto;
+    width: 70%;
+
+}
+
+h2 {
+    padding: 0.3125em;
+    width: 50%;
+    margin-top: 2em;
+    text-align: center;
+}
+
+p, div.p {  
+    padding: 1.875em;
+    width: 100%;
+    margin-top: 1.25em;
+    line-height: 130%;
+}
+
+main {
+
+    margin: auto;
+}
+
+.obsah {
+    margin: auto;
+    width: 70em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+main h2, main p, div.p {
+    background-color: rgba(11, 115, 51, 0.4);
+    border: solid;
+    border-color: rgba(11, 115, 51, 0.4);
+    border-radius: 1.875em;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+bolt {
+    font-weight: 700;
+}
+
+.aintext {
+    color: rgb(111, 215, 51);
+}
+.aintext:hover {
+    text-decoration: underline;
+}
+.dvasloupce {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.padesat {
+    width: 50%;
+}
+
+.sedesat h2 {
+    width: 70%;
+}
+.sedesat {
+    width: 60%;
+}
+.ctyricet {
+    width: 40%;
+}
+
+.color {
+    border-radius: 1.875em;
+    border: solid;
+    padding: 1.875em;
+    margin: 0.5em 0;
+    box-sizing: border-box;
+    height: 15em;
+    text-align: center;
+}
+.color div {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.white {
+    border-color: white;
+    background-color: rgb(200,200,200,0.8);
+    color: black;
+}
+.blue {
+    border-color: blue;
+    background-color: rgb(0,0,150,0.6);
+}
+.green {
+    border-color: green;
+    background-color: rgb(0,150,0,0.4);
+}
+.red {
+    border-color: red;
+    background-color: rgb(150,0,0,0.6);
+}
+
+h4 {
+    font-size: 150%;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+[id] {
+    scroll-margin-top: 5em;
+}
+
+
+
+@media (max-width: 1300px) {
+    .dvasloupce {
+        flex-direction: column;
+    }
+    .padesat, .ctyricet, .sedesat {
+        width: 100%;
+    }
+    .obsah {
+        width: 95%;
+    }
+    .sidemenu .nabydka {
+        height: auto;
+        min-width: 8em;
+    }
+    .sidemenu {
+        width: 8em;
+        margin: 1em;
+    }
+    .color {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 930px) {
+    body {
+        font-size:medium;
+    }
+    .nabydka {
+        min-width: 0;
+        
+    }
+}
+
+@media (max-width: 700px) {
+    .sidemenu {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+
+    nav {
+        position: relative;
+        flex-direction: column;
+    }
+    iframe {
+        width: 100%;
+    }
+    h2 {width: 80%;}
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 90%
+    }
+    .chosen {
+        font-size: 2em;
+        font-weight: 700;
+    }
+}
